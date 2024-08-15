@@ -327,13 +327,13 @@
     $("#submit-form").submit((e)=>{
         e.preventDefault()
         $.ajax({
-            url:"https://docs.google.com/spreadsheets/d/1GCoVKtiB2PAA_Raz7kBRpnPuHpL5fCo5QZTtMhsiv1I/edit?usp=sharing",
+            url:"https://script.google.com/macros/s/AKfycbwHLfxuJik9yEfm3FH3UFwIfMD0EG5kmyy7xS8-WTDumuE-7vHCqi3Ed15cVK1_d0dS/exec",
             data:$("#submit-form").serialize(),
             method:"post",
             success:function (response){
-                alert("Form submitted successfully")
-                //window.location.reload()
-                window.location.href="https://google.com"
+                // alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
             },
             error:function (err){
                 alert("Something Error")
